@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Total User: <%= total %> </h1>
+  
+      
+
+
+     <h1>Enter Your name</h1>
+    <form action="/save" method="POST"  onsubmit="return checkData()">
+       
+    
+     <input type="text" name="username" placeholder="Enter your name ">
+     <hr>
+     <hr>
+     <input type="text" name="email" placeholder="Enter your email ">
+     <hr>
+    <button type="submit">Save</button>
+     </form>
+     <hr><br>
+     <form action="/read" method="get">
+      <Button>Read</Button>
+     
+     </form>
+      <hr><br>
+     <form action="/delete-page" method="GET"  onsubmit="return checkData()">
+        <Button>Delete</Button>
+       </form>
+        <hr><br>
+        <form action="/update-page" method="get">
+         <button >Update</button>
+        </form>
+         <hr><br>
+        <form action="/search" method="get">
+         <input type="text" name="searchUser" placeholder="Enter your name">
+         <hr><br>
+         <button>Search</button>
+        </form>
+
+
+    
+    
+
+    <script>
+
+   function checkData(){
+
+      let result = confirm("Do you want to save data ?");
+
+      if(result){
+         return true; 
+      }
+      else{
+         return false;
+      }
+
+   }
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+      <!-- <h1>Remaining Data</h1>
+
+    <% users.forEach((item) => { %>
+
+        <pre><%= item %></pre>
+        <hr>
+
+    <% }) %>
+
+    <form action="/" method="GET">
+        <button>Home</button>
+    </form>
+     -->
+
+     <h1>All Users</h1>
+
+<form action="/delete" method="POST">
+
+    <% users.forEach((item) => { %>
+
+        <input 
+            type="checkbox" 
+            name="selectUsers" 
+            value="<%= item %>"
+        >
+
+        <pre><%= item %></pre>
+
+        <hr>
+
+    <% }) %>
+
+    <button type="submit">
+        Delete Selected
+    </button>
+     </form>
+      <hr><br>
+     <form action="/" method="GET">
+        <button>Home</button>
+    </form>
+</body>
+</html>
