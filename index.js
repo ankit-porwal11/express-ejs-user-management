@@ -142,7 +142,8 @@ app.get("/delete-page", (req, res) => {
    res.render("delete", { users });
 
 });
-
+ 
+//  update-page router   
 app.get("/update-page" , (req  , res) => {
    let data = fs.readFileSync("data.txt" , "utf-8");
    let user = data.split("\n\n").filter((item) => item.trim() !== "");

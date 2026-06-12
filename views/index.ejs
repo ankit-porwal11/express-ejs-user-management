@@ -13,6 +13,7 @@
 
      <h1>Enter Your name</h1>
     <form action="/save" method="POST"  onsubmit="return checkData()">
+      // ye mera index.js ke ander save router ke pass chla jaye ga 
        
     
      <input type="text" name="username" placeholder="Enter your name ">
@@ -23,19 +24,23 @@
     <button type="submit">Save</button>
      </form>
      <hr><br>
+     // read page router
      <form action="/read" method="get">
       <Button>Read</Button>
      
      </form>
       <hr><br>
+      // delete page router
      <form action="/delete-page" method="GET"  onsubmit="return checkData()">
         <Button>Delete</Button>
        </form>
         <hr><br>
+        // update router 
         <form action="/update-page" method="get">
          <button >Update</button>
         </form>
          <hr><br>
+         // Search  page 
         <form action="/search" method="get">
          <input type="text" name="searchUser" placeholder="Enter your name">
          <hr><br>
